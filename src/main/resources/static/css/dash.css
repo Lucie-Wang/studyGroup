@@ -1,0 +1,207 @@
+
+body {
+	word-wrap: break-word;
+}
+.dash {
+	column-gap: 20px;
+}
+.row {
+	padding: 10px;
+	border: 1px solid black;
+	background-color: rgba(255, 255, 255, 0.502);
+}
+#profileImage {
+	margin: 0 15px 0 0;
+	vertical-align: middle;
+	width: 150px;
+}
+h3 {
+	margin: 0 0 10px 0;
+	padding: 0 5px;
+	background-color: #00b2389e;
+	color: black;
+}
+.profileRow {
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+.profileInfo {
+	display: grid;
+	align-self:flex-start;
+}
+.profileInfo * {
+	max-width: 100%;
+	overflow-x: auto;
+}
+.dashConnections {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-items: center;
+	column-width: fixed;
+}
+.dashConnectionsRow {
+	display: grid;
+	margin: 0 0 10px 0;
+}
+.dashConnections img {
+	justify-self:center;
+	max-width: 90px;
+	width: 100%;
+	padding: 2px;
+	border: 1px solid black;
+}
+.dashConnections a {
+	max-width: 100%;
+	/* font-size: 1vw; */
+	/* width: 75px; */
+	text-align: center;
+	justify-self: center;
+	overflow-x: auto;
+	font-size: 15px;
+}
+.dashConnections p {
+	text-align: center;
+}
+.feed {
+	display: grid;
+}
+.error {
+	justify-self:center;
+	margin: 0 0 10px 0;
+	color:red;
+}
+.form {
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+	column-gap: 5px;
+	justify-self: center;
+	margin: 0 0 20px 0;
+	width: 80%;
+}
+.content {
+	padding: 5px;
+	border-radius: 0%;
+	font-size: 15px;
+}
+.submit {
+	padding: 5px;
+	font-size: 15px;
+	border-radius: 0%;
+}
+.feedSubHeader {
+	display:grid;
+	margin: 0 0 10px 0;
+}
+.feedSubHeader * {
+	max-width: 100%;
+	overflow-x: auto;
+}
+.friendRequests {
+	display: grid;
+	justify-items: center;
+}
+.friendRequests form, .friendRequests p {
+	display: inline-block;
+}
+.taskListing, .sessionListing, .postContent, .postPic {
+	padding: 2px 5px;
+	margin: 0 5px 5px 5px;
+}
+.taskListing, .sessionListing {
+	padding: 5px 0 10px 5px;
+	border-bottom: 1px dotted black;
+}
+.sessionListing {
+	
+	margin: 0 5px 5px 5px;
+}
+.lastGame {
+	border-bottom: none;
+	margin-bottom: 0px;
+	padding-bottom: 0px
+}
+.jobListing a {
+	color: green;
+	font-weight: 500;
+}
+.connectionsCount {
+	margin: 10px 0 0 0;
+}
+.postPic {
+	width: 50px;
+	border-radius: 50%;
+}
+.postGrid {
+	display: grid;
+	grid-template-columns: auto 1fr;
+}
+.postName {
+	font-weight: bold;
+}
+.postJob, .postCreated {
+	font-size: 15px;
+	color: gray;
+}
+.postContent {
+	margin: 5px 5px 0 5px
+}
+.post {
+	padding: 10px 10px 10px 0;
+	margin: 0 0 10px 0;
+	border: 1px solid black;
+}
+.skillLink {
+	width: fit-content;
+	margin: 15px auto 15px auto;
+}
+.skillLink button {
+	padding: 5px;
+	font-size: 15px;
+	border-radius: 0%;
+}
+.skillsGrid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	row-gap: 15px;
+	padding: 15px 10px 5px 10px;
+	border-top: 1px solid black;
+	font-size: 18px;
+}
+.skillsGrid form {
+	display: inline-block;
+}
+.skillLevel {
+	font-size: 15px;
+	color: gray;
+	display: inline-block;
+}
+.loadMore {
+	width: fit-content;
+	margin: 5px auto 5px auto;
+}
+.loadMore button {
+	padding: 5px;
+	font-size: 15px;
+	border-radius: 0%;
+}
+.endorse {
+	padding: 2px 4px;
+	border: none;
+	background-color: #00b2389e;
+	color: white;
+}
+.discredit {
+	padding: 2px 4px;
+	border: none;
+	background-color: red;
+	color:white;
+}
+.green, .red {
+	font-size: 15px;
+}
+.green {
+	color: green;
+}
+.red {
+	color: red;
+}

@@ -1,0 +1,233 @@
+
+/* DO NOT TOUCH THIS STYLESHEET. CREATE A NEW STYLESHEET SPECIFICALLY FOR YOUR JSP PAGE AND ADD A LINK TO IT IN THE HEAD */
+
+/* NORMALIZATION */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* DO NOT TOUCH THIS STYLESHEET. CREATE A NEW STYLESHEET SPECIFICALLY FOR YOUR JSP PAGE AND ADD A LINK TO IT IN THE HEAD */
+
+/* WRAPPER */
+
+.wrapper {
+	width: 1200px;
+	margin: auto;
+}
+
+/* DO NOT TOUCH THIS STYLESHEET. CREATE A NEW STYLESHEET SPECIFICALLY FOR YOUR JSP PAGE AND ADD A LINK TO IT IN THE HEAD */
+
+/* NAV */
+
+.navwrapper {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	right: 0;
+	background-color: #2b6397;
+}
+
+.nav {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 1200px;
+	padding: 10px;
+	margin: auto;
+	color: white;
+}
+.nav .llogo {
+	width: fit-content;
+	font-size: 20px;
+/* 	border: 2px solid white; */
+	
+}
+
+.nav2 {
+	align-self: center;
+	justify-self: center;	
+}
+.nav3 {
+	align-self: center;
+	justify-self: right;
+}
+.nav3 .links {
+	text-decoration: none;
+	color: white;
+}
+
+/* NAV (LOGGED IN) */
+
+.navLI .nav1 {
+	display: grid;
+	grid-template-columns: min-content auto;
+	align-items: center;
+}
+.navLI .nav p {
+	display: inline-block;
+}
+.navLI .nav .icons {
+	align-self: center;
+	justify-self: center;
+}
+.navLI .fafa {
+	width: 25px;
+	padding: 2px;
+	margin: 0 5px;
+	background-color: #9ab7dd;
+	border-radius: 50%;
+}
+.navLI form {
+	display: inline-block;
+}
+.navLI .search {
+	width: 200px;
+	padding: 5px;
+	margin: 0 0 0 10px;
+	border-radius: 0%;
+	
+}
+.navLI .searchSubmit {
+	padding: 5px;
+	border-radius: 0%;
+	margin: 0 10px 0 0;
+}
+
+/* NAV SPACERS */
+
+.navSpacer {
+	height: 50px;
+}
+.navLISpacer {
+	height: 70px;
+}
+
+/* LOGIN */
+
+.log .header {
+	margin: 100px 0 40px 0;
+}
+
+/* REGISTRATION AND LOGIN */
+
+.regLog {
+	display: grid;
+	justify-items: center;
+}
+.regLog .welcome {
+	margin: 100px 0 0 0;
+}
+.regLog .error {
+	text-align: center;
+	color: red;
+}
+.regLog .form {
+	display: grid;
+	justify-items: center;
+}
+.regLog .blurb {
+	width: 900px;
+	margin: 40px 0 40px 0;
+	font-size: 18px;
+	text-align: center;
+	color: #666666;
+}
+.regLog .input {
+	width: 370px;
+	margin: 10px 0 0 0;
+	padding: 5px;
+	border-radius: 0%;
+	font-size: 15px;
+}
+.regLog .submit {
+	background-color: #3c64d1;
+	color: white;
+}
+.regLog .switch {
+	margin: 10px 0 0 0;
+}
+
+/* NEW CHARACTER */
+
+.newChar .header {
+	margin: 100px 0 40px 0;
+}
+.newChar .picture {
+	margin: 40px 0 0 0;
+	width: 700px;
+	font-size: 18px;
+	font-weight: bolder;
+	text-align: center;
+}
+.newChar #images {
+	width: 700px;
+	margin: 10px 0 40px 0;
+}
+.newChar #images * {
+	margin: 2px;
+	padding: 2px;
+	border: 1px solid black;
+}
+
+/* DASH */
+
+.dash {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	padding: 20px;
+}
+	.dash .col1 {
+		display: grid;
+		row-gap: 20px;
+	}
+	.dash .col2 {
+		display: grid;
+		row-gap: 20px;
+	}
+
+/* JOBS */
+
+.jobForms {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+/* CONNECTIONS */
+
+.connections {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	column-gap: 20px;
+	padding: 20px;
+}
+	.connectionscol1 {
+		display: grid;
+		row-gap: 20px;
+	}
+	.connectionscol2 {
+		display: grid;
+		row-gap: 20px;
+	}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width:1200px) {
+	.wrapper {
+		width: 100%
+	}
+}
+
+@media only screen and (max-width:768px) {
+	.dash {
+		grid-template-columns: 1fr;
+	}
+	.jobForms {
+		grid-template-columns: 1fr;
+	}
+}
